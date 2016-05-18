@@ -51,19 +51,17 @@
  */
 #}
 <div class="layout-container">
-
   <header role="banner">
-    {{ page.header }}
-      {{ page.primary_menu }}
+    <div class="header-branding">
+      {{ page.header }}
+    </div>
+    <div class="header-menus">
       {{ page.secondary_menu }}
+      {{ page.primary_menu }}
+    </div>
   </header>
-
   <main role="main">
-
-
-
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
       {% if page.sidebar_first %}
           <aside class="layout-sidebar-first" role="complementary">
               {{ page.sidebar_first }}

@@ -7,23 +7,24 @@
 body {
   border: $brown solid 1em;
   margin: 0;
+}
+
+main {
+  @include outer-container;
   font-family: 'Merriweather', 'Georgia', serif;
   a {
     &:hover, &:active, &:link, &:visited {
       color: $dark_blue;
     }
   }
-}
-
-main {
-  @include outer-container;
   p {
     font-size: 1em;
   }
   h1 {
     font-size: 2.5rem;
     line-height: 1.225;
-    margin-bottom: 1.05em;  }
+    margin-bottom: 1.05em;
+  }
   h2 {
     font-size: 1.6em;
   }
@@ -52,6 +53,7 @@ main {
 }
 
 footer {
+  @include outer-container;
   @include span-columns(12);
 }
 
@@ -59,6 +61,11 @@ footer {
   @include span-columns(7);
   @include media($tablet) {
     @include span-columns(10 of 10);
+  }
+  .block-system-main-block {
+    a {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -94,236 +101,123 @@ footer {
 
 header {
   @include outer-container;
-  div {
-    @include span-columns(10);
+  .header-menus {
+    @include span-columns(6);
+    @include media($tablet) {
+      @include span-columns(10 of 10);
+    }
+    ul.menu {
+      display: inline;
+      padding-left: 0;
+      li {
+        display: inline;
+        list-style-type: none;
+        padding: 0 0.5em;
+        a.is-active {
+          color: #000;
+        }
+      }
+    }
+  }
+  .header-branding {
+    @include span-columns(6);
+    @include media($tablet) {
+      @include span-columns(10 of 10);
+    }
+    .site-slogan {
+      @include font(100);
+    }
     .site-name {
       @include font;
       font-size: 1.7em;
       a {
         color: $brown;
       }
-
     }
-    .site-name-and-slogan {
-      @include span-columns(7);
-      @include media($tablet) {
-        @include span-columns(10 of 10);
+  }
+}
+
+/* book navigation under book content */
+
+.book-navigation {
+  border-top: 2px solid $brown;
+  opacity: 0.9;
+  margin: 1em 0;
+  .menu {
+    padding-bottom: 0;
+    padding-top: 1em;
+  }
+  .book-pager {
+    margin: 0;
+    overflow: auto;
+    padding: 0.5em 0;
+  }
+  .book-pager__item {
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: top;
+  }
+  .book-pager__item--previous {
+    text-align: left;
+    width: 45%;
+  }
+  .book-pager__item--center {
+    text-align: center;
+    width: 8%;
+  }
+  .book-pager__item--next {
+    float: right;
+    text-align: right;
+    width: 45%;
+  }
+}
+
+.block-book-navigation {
+  ul.menu {
+    list-style: none outside;
+    margin-left: 1em;
+    padding: 0;
+    text-align: left;
+    a.is-active {
+      &:hover, &:active, &:link, &:visited {
+        color: #000;
       }
-      .site-logo {
-        float: left;
-        width: 20%;
+    }
+    .menu-item--expanded {
+      list-style-image: url(../../../core/misc/menu-expanded.png);
+      list-style-type: circle;
+    }
+    .menu-item--collapsed {
+      list-style-image: url(../../../core/misc/menu-collapsed.png);
+      list-style-type: disc;
+    }
+    .menu-item {
+      padding-top: 0.2em;
+      margin: 0;
+    }
+  }
+}
+
+/* breadcrumbs */
+
+.breadcrumb {
+  font-size: 0.8em;
+  padding-bottom: 0.5em;
+  ol {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      &:before {
+        content: ' \BB ';
       }
-      .site-name-and-slogan {
-        float: left;
-        width: 76%;
-        .site-name {
-          a {
-            &:hover, &:active, &:link, &:visited {
-              text-decoration: none;
-              color: $green;
-              @include font(100);
-              font-size: 3.7em;
-              //              font-style: italic;
-              line-height: 1.3em;
-              letter-spacing: 0.15em;
-            }
-          }
-        }
-        .site-slogan {
-          @include font(100);
-          font-size: 1.4em;
-          color: white;
-          letter-spacing: 0.39em;
-        }
+      &:first-child:before {
+        content: none;
       }
     }
   }
 }
 
-//
-///* object detail page */
-//
-//.node--type-object #content {
-//  .field-type-image {
-//    .field-item {
-//      float: left;
-//      display: inline;
-//      margin: 0 22px 22px 0;
-//      img {
-//        max-width: 100%;
-//        _width: 100%;
-//        vertical-align: middle;
-//        height: auto;
-//        top: 0px;
-//        border: 2px #eeeeee solid;
-//        padding: 2px;
-//        @include box-shadow(#bbbbbb 1px 1px 3px);
-//        border-radius: 2px;
-//      }
-//    }
-//  }
-//  .data-list {
-//    clear: right;
-//    font-size: 1.2em;
-//    .label {
-//      font-weight: bold;
-//    }
-//    .field {
-//      border-bottom: 1px dotted #999999;
-//      line-height: 1.3em;
-//      padding: 0 0 10px 0;
-//      margin: 10px 0 0 0;
-//    }
-//    .field-name-body {
-//      margin: 10px 0 0 0;
-//    }
-//  }
-//}
-//
-//.main-menu {
-//  ul {
-//    margin: 0;
-//    padding: 0;
-//    li {
-//      display: inline;
-//      font-size: 1.2em;
-//      list-style: none;
-//      background: $light_beige url(../images/menubalk.png);
-//      border-radius: 10px;
-//      padding: 6px 6px 10px 8px;
-//      margin: 0 6px 6px 0;
-//      @include box-shadow(#cccccc 1px 1px 1px);
-//      &:hover {
-//        color: #333333;
-//      }
-//      a {
-//        text-decoration: none;
-//        color: white;
-//        padding: 6px;
-//        @include font;
-//        @include text-shadow(black, 2px, 2px, 2px);
-//      }
-//    }
-//  }
-//}
-//
-//// the slideshow
-//
-//.slideshow-block {
-//  ul.rslides {
-//    position: relative;
-//    list-style: none;
-//    overflow: hidden;
-//    width: 100%;
-//    padding: 0;
-//    margin: 0;
-//    li.slide {
-//      -webkit-backface-visibility: hidden;
-//      position: absolute;
-//      display: none;
-//      padding: 0;
-//      margin: 0;
-//      width: 100%;
-//      left: 0;
-//      top: 0;
-//      margin-bottom: 50px;
-//      img {
-//        max-width: 100%;
-//        _width: 100%;
-//        vertical-align: middle;
-//        height: auto;
-//        top: 0px;
-//        border: 3px $light_brown solid;
-//      }
-//      .text {
-//        position: absolute;
-//        bottom: 3em;
-//        left: 10px;
-//        color: white;
-//        padding: 10px;
-//        .title {
-//          font-family: "Gentium Basic", Georgia, serif, cursive;
-//          font-weight: 700;
-//          font-size: 1.7em;
-//          background: rgb(0, 0, 0);
-//          background: rgba(0, 0, 0, 0.7);
-//          max-width: 600px;
-//          overflow: hidden;
-//          padding: 10px;
-//          a {
-//            &:hover, &:active, &:link, &:visited {
-//              color: $light_brown;
-//              text-decoration: none;
-//            }
-//          }
-//        }
-//
-//      }
-//    }
-//  }
-//  .rslides_tabs {
-//    bottom: 8em;
-//    margin: 0;
-//    padding: 0;
-//    text-align: center;
-//    position: relative;
-//    width: 100%;
-//    z-index: 10;
-//    a {
-//      border-radius: 5px;
-//      display: inline-block;
-//      border: 2px solid white;
-//      margin-left: 1em;
-//      margin-bottom: -20px;
-//      text-indent: -9999px;
-//      height: 16px;
-//      width: 16px;
-//      background-color: $light_brown;
-//    }
-//    li {
-//      display: inline;
-//      position: relative;
-//
-//      & + li {
-//        margin-left: .5em;
-//      }
-//      &:first-child {
-//        position: relative;
-//        float: none;
-//        display: inline;
-//      }
-//      &.rslides_here a {
-//        background: $light_yellow;
-//        background: rgba($light_yellow, .65);
-//      }
-//    }
-//  }
-//
-//}
-//
-//
-//.dd-tools-flickr {
-//  padding: 0px;
-//  margin: 0px;
-//  ul {
-//    float: left;
-//    padding: 10px 0px;
-//    margin: 0px;
-//    li {
-//      display: inline;
-//      list-style: none;
-//      img {
-//        border: none;
-//        padding: 0 5px 5px 0;
-//        width: 88px;
-//        height: 88px;
-//        opacity: 0.6;
-//        -moz-opacity: 0.6;
-//        &:hover {
-//          opacity: 1;
-//          -moz-opacity: 1;
-//        }
-//      }
-//    }
-//  }
-//}
