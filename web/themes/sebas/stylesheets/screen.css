@@ -307,7 +307,11 @@ header {
     float: left;
     display: block;
     margin-right: 2.32558%;
-    width: 48.83721%; }
+    width: 48.83721%;
+    margin: 1em 0;
+    font-family: 'Merriweather', 'Georgia', serif;
+    font-size: 0.8em;
+    text-align: right; }
     header .header-menus:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px) {
@@ -325,7 +329,9 @@ header {
         display: inline;
         list-style-type: none;
         padding: 0 0.5em; }
-        header .header-menus ul.menu li a.is-active {
+        header .header-menus ul.menu li a:hover, header .header-menus ul.menu li a:active, header .header-menus ul.menu li a:link, header .header-menus ul.menu li a:visited {
+          color: #000000; }
+        header .header-menus ul.menu li a .is-active {
           color: #000; }
   header .header-branding {
     float: left;
@@ -353,6 +359,41 @@ header {
       font-size: 1.7em; }
       header .header-branding .site-name a {
         color: #593E1A; }
+
+.primary-menu {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+  .primary-menu::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .primary-menu div {
+    background: #266A2E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-weight: 700;
+    float: left;
+    display: block;
+    margin-right: 2.32558%;
+    width: 100%;
+    margin: 1em 0;
+    padding: 0.5em 0; }
+    .primary-menu div:last-child {
+      margin-right: 0; }
+    .primary-menu div ul.menu {
+      display: inline;
+      padding-left: 0; }
+      .primary-menu div ul.menu li {
+        display: inline;
+        list-style-type: none;
+        padding: 0 1em; }
+        .primary-menu div ul.menu li a {
+          text-decoration: underline; }
+          .primary-menu div ul.menu li a:hover, .primary-menu div ul.menu li a:active, .primary-menu div ul.menu li a:link, .primary-menu div ul.menu li a:visited {
+            color: white; }
+          .primary-menu div ul.menu li a .is-active {
+            color: #000; }
 
 /* book navigation under book content */
 .book-navigation {
