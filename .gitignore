@@ -2,7 +2,10 @@
 drush/contrib
 vendor
 web/core
-web/modules/contrib
+# as temp workaround for composer error contrib is added to git repo
+#web/modules/contrib
+# but dev modules not in git repo
+web/modules/development
 web/themes/contrib
 web/profiles/contrib
 
