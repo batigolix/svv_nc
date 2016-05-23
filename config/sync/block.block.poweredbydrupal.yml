@@ -1,0 +1,20 @@
+uuid: 1fa85154-1db4-489c-bfb6-bbd1d8fb42d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sebas
+id: poweredbydrupal
+theme: sebas
+region: sidebar_second
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

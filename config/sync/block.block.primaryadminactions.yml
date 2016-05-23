@@ -1,0 +1,18 @@
+uuid: e2e036c5-1cd9-447c-9315-f6e3beee4508
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sebas
+id: primaryadminactions
+theme: sebas
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
