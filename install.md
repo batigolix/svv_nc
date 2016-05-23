@@ -2,14 +2,11 @@ composer create-project drupal-composer/drupal-project:8.x-dev svv --stability d
 
 composer install
 
-````
 ../vendor/drush/drush/drush si standard --db-url=mysql://root:root@localhost/svv1
-```
 
 drush @svv8.val en sebas
 
 drush rsync @svv.a2h:%files/ @svv8.val:%files
-
 
 chmod a+w sites/default/settings.php
 
@@ -26,7 +23,7 @@ drush @svv8.val sqlq "update node_revision__body set body_format ='full_html';"
 install steps from http://bourbon.io/
 valencia:sebas boris$ sass --watch stylesheets/sass:stylesheets
 
-design
+#design
 colors
 http://www.colorcombos.com/color-schemes/43/ColorCombo43.html
 https://wordpress.org/themes/twentysixteen/
