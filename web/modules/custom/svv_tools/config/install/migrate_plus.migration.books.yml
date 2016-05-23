@@ -1,10 +1,10 @@
 id: books
 label: Books
-migration_group: SVVF
+migration_group: SVV
 migration_dependencies: {}
 source:
   plugin: json_source
-  path: http://svv8.val/products.json
+  path: http://svv.val/books.json
   headers:
     Accept: 'application/json'
   identifier: nid
@@ -12,8 +12,9 @@ source:
   fields:
     - nid
     - title
-    - description
-    - price
+    - body
+    - created
+    - updated
 destination:
   plugin: entity:node
 process:
@@ -25,6 +26,8 @@ process:
   sticky:
     plugin: default_value
     default_value: 0
+  created: created
+  updated: updated
   uid:
     plugin: default_value
     default_value: 1

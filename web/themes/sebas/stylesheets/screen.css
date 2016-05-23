@@ -298,7 +298,8 @@ footer {
 header {
   max-width: 1000px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 1em; }
   header::after {
     clear: both;
     content: "";
@@ -363,7 +364,8 @@ header {
 .primary-menu {
   max-width: 1000px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 1em; }
   .primary-menu::after {
     clear: both;
     content: "";
@@ -378,7 +380,7 @@ header {
     margin-right: 2.32558%;
     width: 100%;
     margin: 1em 0;
-    padding: 0.5em 0; }
+    padding: 0.6em 0 0.6em 0.4em; }
     .primary-menu div:last-child {
       margin-right: 0; }
     .primary-menu div ul.menu {

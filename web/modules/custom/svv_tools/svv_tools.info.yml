@@ -1,6 +1,6 @@
 type: module
 name: SVV tools
-description: 'SVV tools, including migration.'
+description: 'SVV blocks & migration.'
 package: Custom
 core: 8.x
 dependencies:
