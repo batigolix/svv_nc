@@ -8,6 +8,7 @@ module:
   color: 0
   config: 0
   config_devel: 0
+  config_readonly: 0
   contextual: 0
   datetime: 0
   dblog: 0
@@ -49,3 +50,4 @@ theme:
   sebas: 0
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
+langcode: nl
