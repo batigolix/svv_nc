@@ -1,13 +1,13 @@
 uuid: e2e036c5-1cd9-447c-9315-f6e3beee4508
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - sebas
 id: primaryadminactions
 theme: sebas
-region: content
-weight: -4
+region: '-1'
+weight: -6
 provider: null
 plugin: local_actions_block
 settings:

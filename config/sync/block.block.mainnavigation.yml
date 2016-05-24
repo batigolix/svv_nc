@@ -10,8 +10,8 @@ dependencies:
     - sebas
 id: mainnavigation
 theme: sebas
-region: header
-weight: -4
+region: primary_menu
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:
