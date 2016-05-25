@@ -244,7 +244,7 @@ footer {
     .layout-content {
       float: left;
       display: block;
-      margin-right: 2.80374%;
+      margin-right: 2.32558%;
       width: 100%; }
       .layout-content:last-child {
         margin-right: 0; } }
@@ -262,7 +262,7 @@ footer {
     .layout-sidebar-second {
       float: left;
       display: block;
-      margin-right: 2.80374%;
+      margin-right: 2.32558%;
       width: 100%; }
       .layout-sidebar-second:last-child {
         margin-right: 0; } }
@@ -278,7 +278,7 @@ footer {
     .layout-sidebar-first {
       float: left;
       display: block;
-      margin-right: 2.80374%;
+      margin-right: 2.32558%;
       width: 100%; }
       .layout-sidebar-first:last-child {
         margin-right: 0; } }
@@ -304,62 +304,65 @@ header {
     clear: both;
     content: "";
     display: table; }
-  header .header-menus {
+  header .site-logo {
     float: left;
     display: block;
     margin-right: 2.32558%;
-    width: 48.83721%;
-    margin: 1em 0;
-    font-family: 'Merriweather', 'Georgia', serif;
-    font-size: 0.8em;
-    text-align: right; }
-    header .header-menus:last-child {
+    width: 23.25581%; }
+    header .site-logo:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px) {
-      header .header-menus {
+      header .site-logo {
         float: left;
         display: block;
-        margin-right: 2.80374%;
+        margin-right: 2.32558%;
         width: 100%; }
-        header .header-menus:last-child {
+        header .site-logo:last-child {
           margin-right: 0; } }
-    header .header-menus ul.menu {
-      display: inline;
-      padding-left: 0; }
-      header .header-menus ul.menu li {
-        display: inline;
-        list-style-type: none;
-        padding: 0 0.5em; }
-        header .header-menus ul.menu li a:hover, header .header-menus ul.menu li a:active, header .header-menus ul.menu li a:link, header .header-menus ul.menu li a:visited {
-          color: #000000; }
-        header .header-menus ul.menu li a .is-active {
-          color: #000; }
-  header .header-branding {
+  header .site-name-and-slogan {
+    padding-top: 1.3em;
     float: left;
     display: block;
     margin-right: 2.32558%;
-    width: 48.83721%; }
-    header .header-branding:last-child {
+    width: 74.4186%; }
+    header .site-name-and-slogan:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px) {
-      header .header-branding {
+      header .site-name-and-slogan {
         float: left;
         display: block;
-        margin-right: 2.80374%;
+        margin-right: 2.32558%;
         width: 100%; }
-        header .header-branding:last-child {
+        header .site-name-and-slogan:last-child {
           margin-right: 0; } }
-    header .header-branding .site-slogan {
+    header .site-name-and-slogan .site-slogan {
       font-family: 'Montserrat', sans-serif;
       font-weight: bold;
       font-weight: 100; }
-    header .header-branding .site-name {
+    header .site-name-and-slogan .site-name {
       font-family: 'Montserrat', sans-serif;
       font-weight: bold;
       font-weight: 700;
       font-size: 1.7em; }
-      header .header-branding .site-name a {
+      header .site-name-and-slogan .site-name a {
         color: #593E1A; }
+
+.top-menu {
+  margin: 1em 0;
+  font-family: 'Merriweather', 'Georgia', serif;
+  font-size: 0.8em;
+  text-align: right; }
+  .top-menu ul.menu {
+    display: inline;
+    padding-left: 0; }
+    .top-menu ul.menu li {
+      display: inline;
+      list-style-type: none;
+      padding: 0 0.5em; }
+      .top-menu ul.menu li a:hover, .top-menu ul.menu li a:active, .top-menu ul.menu li a:link, .top-menu ul.menu li a:visited {
+        color: #000000; }
+      .top-menu ul.menu li a .is-active {
+        color: #000; }
 
 .primary-menu {
   max-width: 1000px;

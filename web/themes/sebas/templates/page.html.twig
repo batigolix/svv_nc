@@ -51,13 +51,12 @@
  */
 #}
 <div class="layout-container">
+  <div class="top-menu">
+    {{ page.secondary_menu }}
+  </div>
+
   <header role="banner">
-    <div class="header-branding">
-      {{ page.header }}
-    </div>
-    <div class="header-menus">
-      {{ page.secondary_menu }}
-    </div>
+    {{ page.header }}
   </header>
 
   <div class="primary-menu">

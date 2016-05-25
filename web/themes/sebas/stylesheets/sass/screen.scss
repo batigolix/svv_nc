@@ -60,7 +60,7 @@ footer {
 .layout-content {
   @include span-columns(7);
   @include media($tablet) {
-    @include span-columns(10 of 10);
+    @include span-columns(12 of 12);
   }
   .block-system-main-block {
     a {
@@ -72,14 +72,14 @@ footer {
 .layout-sidebar-second {
   @include span-columns(2);
   @include media($tablet) {
-    @include span-columns(10 of 10);
+    @include span-columns(12 of 12);
   }
 }
 
 .layout-sidebar-first {
   @include span-columns(3);
   @include media($tablet) {
-    @include span-columns(10 of 10);
+    @include span-columns(12 of 12);
   }
 }
 
@@ -102,37 +102,17 @@ footer {
 header {
   @include outer-container;
   margin-bottom: 1em;
-  .header-menus {
-    @include span-columns(6);
+  .site-logo {
+    @include span-columns(3);
     @include media($tablet) {
-      @include span-columns(10 of 10);
-    }
-    margin: 1em 0;
-    font-family: 'Merriweather', 'Georgia', serif;
-    font-size: 0.8em;
-    text-align: right;
-    ul.menu {
-      display: inline;
-      padding-left: 0;
-      li {
-        display: inline;
-        list-style-type: none;
-        padding: 0 0.5em;
-        a {
-          &:hover, &:active, &:link, &:visited {
-            color: #000000;
-          }
-          .is-active {
-            color: #000;
-          }
-        }
-      }
+      @include span-columns(12 of 12);
     }
   }
-  .header-branding {
-    @include span-columns(6);
+  .site-name-and-slogan{
+    padding-top: 1.3em;
+    @include span-columns(9);
     @include media($tablet) {
-      @include span-columns(10 of 10);
+      @include span-columns(12 of 12);
     }
     .site-slogan {
       @include font(100);
@@ -142,6 +122,30 @@ header {
       font-size: 1.7em;
       a {
         color: $brown;
+      }
+    }
+  }
+}
+
+.top-menu {
+  margin: 1em 0;
+  font-family: 'Merriweather', 'Georgia', serif;
+  font-size: 0.8em;
+  text-align: right;
+  ul.menu {
+    display: inline;
+    padding-left: 0;
+    li {
+      display: inline;
+      list-style-type: none;
+      padding: 0 0.5em;
+      a {
+        &:hover, &:active, &:link, &:visited {
+          color: #000000;
+        }
+        .is-active {
+          color: #000;
+        }
       }
     }
   }
