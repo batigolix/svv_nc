@@ -17,4 +17,4 @@ web/sites/default/files
 
 web/themes/sebas/.sass-cache
 
-web/sites/default/settings.php
+web/sites/default/settings.local.php
