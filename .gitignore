@@ -16,3 +16,5 @@ web/sites/default/files
 .idea
 
 web/themes/sebas/.sass-cache
+
+web/sites/default/settings.php
