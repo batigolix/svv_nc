@@ -18,3 +18,5 @@ web/sites/default/files
 web/themes/sebas/.sass-cache
 
 web/sites/default/settings.local.php
+
+web/legacy
