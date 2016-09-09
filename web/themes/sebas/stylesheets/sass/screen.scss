@@ -227,7 +227,7 @@ header {
         color: #000;
       }
     }
-    .menu-item--expanded {
+    li.menu-item--expanded {
       list-style-image: url(../../../core/misc/menu-expanded.png);
       list-style-type: circle;
     }
@@ -237,7 +237,7 @@ header {
     }
     .menu-item {
       padding-top: 0.2em;
-      margin: 0;
+      margin: 0 0 0.2em 0;
     }
   }
 }
@@ -269,3 +269,17 @@ header {
   margin-bottom: 1em;
 }
 
+article {
+  .body {
+    table {
+      border-top: 4px solid $brown;
+      border-bottom: 4px solid $brown;
+      tr {
+        &:first-child {
+          border-bottom: 2px solid $brown;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
