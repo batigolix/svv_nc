@@ -26,7 +26,10 @@ process:
     plugin: default_value
     default_value: book
   title: title
-  body: body
+  body/format:
+    plugin: default_value
+    default_value: advanced_html
+  body/value: body
   sticky:
     plugin: default_value
     default_value: 0
