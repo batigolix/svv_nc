@@ -1,5 +1,8 @@
-bottom padding see /contact
-h3 padding margin see /contact
+- X bottom padding see /contact
+- X h3 padding margin see /contact
 
 remove devel, config devel, etc,
 remove migrate
+remove kint
+
+- X remove preview button from cont form

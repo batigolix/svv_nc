@@ -182,7 +182,8 @@ html {
 
 body {
   border: #593E1A solid 1em;
-  margin: 0; }
+  margin: 0;
+  padding: 1em; }
 
 main {
   max-width: 1000px;
@@ -202,9 +203,11 @@ main {
     line-height: 1.225;
     margin-bottom: 1.05em; }
   main h2 {
-    font-size: 1.6em; }
+    font-size: 1.6em;
+    margin: 1em 0 1em 0; }
   main h3 {
-    font-size: 1.4em; }
+    font-size: 1.4em;
+    margin: 1em 0 1em 0; }
   main h1, main h2, main h3, main h4, main h5, main h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
