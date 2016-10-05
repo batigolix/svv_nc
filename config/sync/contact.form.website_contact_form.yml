@@ -3,7 +3,7 @@ langcode: nl
 status: true
 dependencies: {  }
 id: website_contact_form
-label: 'Website contact form'
+label: 'Contact opnemen'
 recipients:
   - mdoesborg@gmail.com
   - bdoesborg@gmail.com

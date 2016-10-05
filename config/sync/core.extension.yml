@@ -7,14 +7,12 @@ module:
   ckeditor: 0
   color: 0
   config: 0
-  config_devel: 0
   config_readonly: 0
   contact: 0
   contextual: 0
   ctools: 0
   datetime: 0
   dblog: 0
-  devel: 0
   dynamic_page_cache: 0
   editor: 0
   environment_indicator: 0
@@ -23,14 +21,12 @@ module:
   file: 0
   filter: 0
   image: 0
-  kint: 0
   language: 0
   link: 0
   locale: 0
   menu_ui: 0
   migrate: 0
   migrate_plus: 0
-  migrate_source_json: 0
   migrate_tools: 0
   node: 0
   options: 0

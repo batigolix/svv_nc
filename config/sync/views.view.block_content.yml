@@ -55,7 +55,7 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ Previous'
+            previous: '‹ Vorige'
             next: 'Next ›'
           expose:
             items_per_page: false
@@ -489,6 +489,8 @@ display:
         weight: 0
         context: '0'
         menu_name: admin
+        enabled: true
+        expanded: false
     cache_metadata:
       contexts:
         - 'languages:language_content'

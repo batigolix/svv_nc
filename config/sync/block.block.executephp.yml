@@ -2,8 +2,6 @@ uuid: d075d667-5219-4c40-a7f6-91966d5af0c7
 langcode: nl
 status: false
 dependencies:
-  module:
-    - devel
   theme:
     - sebas
 id: executephp

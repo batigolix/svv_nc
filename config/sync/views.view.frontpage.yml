@@ -13,7 +13,7 @@ _core:
 id: frontpage
 label: Frontpage
 module: node
-description: 'All content promoted to the front page.'
+description: 'Alle inhoud die wordt aangeraden op de voorpagina.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -179,7 +179,7 @@ display:
             offset: false
             offset_label: Offset
           tags:
-            previous: '‹ Previous'
+            previous: '‹ Vorige'
             next: 'Next ›'
             first: '« First'
             last: 'Last »'
@@ -291,6 +291,9 @@ display:
     display_options:
       path: node
       display_extenders: {  }
+      menu:
+        enabled: true
+        expanded: false
     display_plugin: page
     display_title: Page
     id: page_1
