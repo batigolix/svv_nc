@@ -6,3 +6,9 @@ remove migrate
 remove kint
 
 - X remove preview button from cont form
+
+- en verwijderen
+
+- menu links
+- browsers: hoofdletter probleem
+
